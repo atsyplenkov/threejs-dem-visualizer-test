@@ -40,7 +40,7 @@ class Application {
       this.render();
     } else {
       // TODO: style warning message
-      console.log('WebGL NOT supported in your browser!');
+      console.log('WebGL NOT supported in your browser!!');
       const warning = Detector.getWebGLErrorMessage();
       this.container.appendChild(warning);
     }
