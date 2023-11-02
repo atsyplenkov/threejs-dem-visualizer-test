@@ -17,8 +17,8 @@ import * as Detector from '../js/vendor/Detector';
 // import terrain from '../textures/agri-medium-dem.tif';
 // import mountainImage from '../textures/agri-medium-autumn.jpg';
 
-import terrain from '../textures/agri-small-dem.tif';
-import mountainImage from '../textures/agri-small-autumn.jpg';
+import terrain from '../textures/rangi_dem.tif';
+import mountainImage from '../textures/rangi_aerial.jpg';
 
 require('../sass/home.sass');
 
@@ -139,7 +139,7 @@ class Application {
       const arr1 = new Array(geometry.attributes.position.count);
       const arr = arr1.fill(1);
       arr.forEach((a, index) => {
-        geometry.attributes.position.setZ(index, (data[index] / 10) * -1);
+        geometry.attributes.position.setZ(index, (data[index] / 5) * -1);
       });
       console.timeEnd('parseGeom');
 
